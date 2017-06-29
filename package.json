@@ -1,5 +1,5 @@
 {
-  "name": "react-express-boilerplate-app",
+  "name": "react-router-jwt-boilerplate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,21 +1,31 @@
-### react-express-boilerplate-app
-> create-react-app + Express API
+### react-router-jwt-boilerplate
+> boilerplate react app with Json Web Tokens & simple local authentication
 
-* A simple react app with a backend express API 💥 🎉 🐝
+* A simple JWT authenticated react app with a backend express API 💥 🎉 🐝
 
-## Heroku Demo
-- see the demo of the site: [https://react-express-boilerplate.herokuapp.com/](https://react-express-boilerplate.herokuapp.com/)
+<!-- ## Heroku Demo
+- see the demo of the site:
+ [https://react-express-boilerplate.herokuapp.com/](https://react-express-boilerplate.herokuapp.com/) -->
 
 ## Technology:
 - react.js + [Create React App](https://github.com/facebookincubator/create-react-app).
 - [Express.js](https://expressjs.com/)
+- Mongoose + MongoDB: for storing users & hashed passwords
+- bcryptjs: for hashing passwords
+- jwt: for creating Json Web Tokens
 
 ## Getting started:
 * clone this repository && and create a new git repo
 ```
-$ git clone git@github.com:thechutrain/react-express-api-boilerplate.git
+$ git clone git@github.com:thechutrain/react-router-jwt-boilerplate.git
 $ rm -rf .git
 $ git init
+```
+
+* Make a `.env` file that contains a value for the following two keys:
+```
+MONGODB_URI= [LOCAL-DB-URL-LINK]
+JWT_PASSPHRASE = [SECRET-SERVER-LONG-PASSWORD]
 ```
 
 ### Developing
