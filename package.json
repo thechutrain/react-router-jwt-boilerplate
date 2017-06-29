@@ -1,0 +1,32 @@
+{
+  "name": "react-express-boilerplate-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.1",
+    "mongoose": "4.10.8",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "dotenv": "^4.0.0",
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "dev": "export NODE_ENV='DEV' && concurrently \"npm run server\" \"npm run client\"",
+    "prod": "export NODE_ENV='PROD' && node server/server.js",
+    "start": "npm run prod",
+    "server": "nodemon server/server.js",
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3001/"
+}
